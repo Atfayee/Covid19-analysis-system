@@ -1,0 +1,8 @@
+.content {
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+#bedscharts {
+    height: 100%;
+}

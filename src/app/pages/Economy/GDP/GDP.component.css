@@ -1,0 +1,12 @@
+.content {
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+#button {
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    right: 1%;
+    z-index: 5;
+}

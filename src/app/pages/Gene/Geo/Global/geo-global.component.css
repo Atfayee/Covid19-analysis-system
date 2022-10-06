@@ -1,0 +1,76 @@
+.content {
+  /* background-color: beige; */
+  height: calc(100vh - 80px);
+  position: relative;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#charts-time {
+  height: 62%;
+  width: 65%;
+  margin: 0;
+}
+
+#charts-bar {
+  position: absolute;
+  right: 0;
+  left: 60%;
+  bottom: 0;
+  height: 100%;
+  /* background-color: red; */
+}
+
+#charts-line {
+  position: absolute;
+  top: 63%;
+  right: 40%;
+  left: 0;
+  width: 60%;
+  height: 37%;
+  bottom: 0;
+  /* background-color: blue; */
+}
+
+/* .btn {
+  position: absolute;
+  top: 0.4rem;
+  right: 35rem;
+} */
+
+.btn {
+  position: absolute;
+  top: 0.4rem;
+  right: 30rem;
+  box-shadow: inset 0px 1px 0px 0px #276873;
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 6px;
+  border: 1px solid #29668f;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+}
+/* .btn:hover {
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color: #408c99;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+} */
+
+.area-link {
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+}

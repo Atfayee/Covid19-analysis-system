@@ -1,0 +1,89 @@
+<nz-layout>
+  <nz-header>
+    <nz-space nzAlign="baseline" [nzSize]="size">
+      <img *nzSpaceItem nz-image id="njnu" nzSrc="../../../logo.ico">
+      <h1 *nzSpaceItem nz-typography>{{title}}</h1>
+    </nz-space>
+    <ul nz-menu nzTheme="dark" nzMode="horizontal" class="header-menu">
+      <li nz-menu-item>关于</li>
+      <li nz-menu-item>帮助</li>
+      <li nz-menu-item>返回
+        <a routerLink="/Home"></a>
+      </li>
+    </ul>
+  </nz-header>
+  <nz-layout class="layout">
+    <nz-sider nzWidth="15%">
+      <ul nz-menu nzTheme="dark" nzMode="inline">
+        <li nz-submenu nzOpen nzTitle="测序数据">
+          <ul>
+            <li nz-menu-item>地理分布
+              <a routerLink="Global"></a>
+            </li>
+            <li nz-menu-item>系统发育树
+              <a routerLink="Tree"></a>
+            </li>
+          </ul>
+        </li>
+        <li nz-menu-item>
+          <span>病例数据
+            <!-- <a href="https://covid19.who.int/"></a> -->
+            <a routerLink="ConfirmedCase"></a>
+          </span>
+        </li>
+        <li nz-submenu nzOpen nzTitle="驱动因素分析">
+          <ul>
+            <li nz-submenu nzTitle="地理环境">
+              <ul>
+                <li nz-menu-item>平均气温
+                  <a routerLink="Temperature"></a>
+                </li>
+                <li nz-menu-item>降水量
+                  <a routerLink="Precipitation"></a>
+                </li>
+              </ul>
+            </li>
+            <li nz-submenu nzTitle="医疗资源">
+              <ul>
+                <li nz-menu-item>医疗卫生机构数
+                  <a routerLink="Institutions"></a>
+                </li>
+                <li nz-menu-item>床位数
+                  <a routerLink="Beds"></a>
+                </li>
+                <li nz-menu-item>卫生人员数
+                  <a routerLink="Personnel"></a>
+                </li>
+              </ul>
+            </li>
+            <li nz-submenu nzTitle="经济发展">
+              <ul>
+                <li nz-menu-item>GDP
+                  <a routerLink="GDP"></a>
+    
+                </li>
+                <li nz-menu-item>人均GDP
+                  <a routerLink="PPGDP"></a>
+    
+                </li>
+                <li nz-menu-item>居民消费价格指数
+                  <a routerLink="PGDP"></a>
+    
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+    </nz-sider>
+    <nz-layout>
+      <nz-content>
+        <div class="inner-content">
+          <router-outlet></router-outlet>
+        </div>
+      </nz-content>
+      <!-- <nz-footer></nz-footer> -->
+    </nz-layout>
+  </nz-layout>
+</nz-layout>

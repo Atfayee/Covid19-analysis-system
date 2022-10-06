@@ -1,0 +1,23 @@
+<router-outlet>
+  <div id="backimg"></div>
+  <div class="title">
+    <div>SARS-CoV-2</div>
+    <div>时空传播特征分析</div>
+  </div>
+  <nz-space [nzSize]="42">
+    <button *nzSpaceItem nz-button nzType="primary">
+      <a routerLink="Content">可视化平台</a>
+    </button>
+    <button *nzSpaceItem nz-button nzType="primary">
+      <a routerLink="Result">研究成果</a>
+    </button>
+  </nz-space>
+  <!-- <nav>
+    <a routerLink="Content">可视化平台</a>
+    <a routerLink="Result">研究成果</a>
+  </nav> -->
+  <div id="copyright">基于基因测序数据的新冠肺炎疫情时空传播特征分析项目组 ©2020南京师范大学地理科学学院</div>
+</router-outlet>
+<!-- <div class="form-group">
+    <button type="submit" class="btn btn-success" (click)="workSpace()">登</button>
+</div> -->

@@ -1,0 +1,48 @@
+nz-space {
+    top: 60%;
+    left: 14%;
+    position: absolute;
+}
+
+button {
+    border-radius: 40px;
+    width: 200px;
+    height: 42px;
+    background: linear-gradient(to right, rgb(209, 10, 177), rgb(119, 189, 235)) no-repeat;
+    border-color: rgba(240, 248, 255, 0);
+    font-family: STCaiyun;
+    font-size: 24px;
+}
+
+button:hover {
+    color: white;
+    background-color: #7bd4f9;
+}
+
+.title {
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 24%;
+    left: 14%;
+    font-family: KaiTi;
+    text-shadow: 0 0 0.1em rgb(209, 10, 177), 0 0 0.1em rgb(119, 189, 235);
+}
+
+#backimg {
+    background-image: url('../../assets/平台背景.png');
+    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 2%;
+    left: 33%;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-family: LiSu;
+}
